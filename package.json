@@ -1,0 +1,38 @@
+{
+  "name": "wt-sample-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.15.6",
+    "find-or-create": "^1.1.0",
+    "helmet": "^3.12.1",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.1",
+    "morgan": "~1.9.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-facebook-token": "^3.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1"
+  }
+}
