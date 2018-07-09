@@ -1,4 +1,6 @@
 module.exports = {
+  mongo_user: 'worktayotest',
+  mongo_pass: 'WgDkjj8ohM7VAaJE',
   secret: 'wh1t3clo4k',
   facebook: {
     clientID: '678398929176766',

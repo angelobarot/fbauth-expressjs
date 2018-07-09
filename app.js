@@ -7,12 +7,13 @@ const logger = require('morgan');
 const helmet = require('helmet');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const config = require('./config');
 // const passport = require('passport');
 
 mongoose.Promise = global.Promise;
 
 mongoose
-  .connect('mongodb://localhost:27017/worktayo', { useNewUrlParser: true })
+  .connect(`mongodb+srv://${config.mongo_user}:${config.mongo_pass}@redditapp-uygqb.mongodb.net/test`, { useNewUrlParser: true })
   .then(() => {
     console.log('Successfully connected to database');
   })
