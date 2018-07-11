@@ -7,23 +7,32 @@
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.4",
+    "crypto-js": "^3.1.9-1",
     "debug": "~2.6.9",
     "express": "~4.16.0",
+    "express-graphql": "^0.6.12",
     "express-jwt": "^5.3.1",
     "express-session": "^1.15.6",
     "find-or-create": "^1.1.0",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.9.2",
     "helmet": "^3.12.1",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "jsonwebtoken": "^8.3.0",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.10",
+    "mongodb": "^3.1.1",
     "mongoose": "^5.2.1",
     "morgan": "~1.9.0",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
-    "passport-facebook-token": "^3.3.0"
+    "passport-facebook-token": "^3.3.0",
+    "validator": "^10.4.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

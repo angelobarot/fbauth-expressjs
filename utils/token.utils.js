@@ -14,6 +14,11 @@ const createToken = user => jwt.sign(
   },
 );
 
+const localLoginToken = logToken => jwt.sign({
+  _id: logToken._id.toHexString(),
+  access: 'auth',
+}, 'locallogin_test').toString();
+
 module.exports = {
   generateToken: (req, res, next) => {
     req.token = createToken(req.user);
@@ -32,4 +37,5 @@ module.exports = {
       next();
     });
   },
+  loginToken: data => localLoginToken(data),
 };
